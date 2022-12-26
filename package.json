@@ -1,0 +1,17 @@
+{
+    "name": "package_name",
+    "version": "1.0.0",
+    "description": "a template for napi - cpp",
+    "main": "dist/main.js",
+    "scripts": {
+        "build": "node-gyp configure build & tsc & node build.js",
+        "test": "tsc & ts-node ./test/func.ts"
+    },
+    "devDependencies": {
+        "node-gyp": "^9.3.1"
+    },
+    "dependencies": {
+        "fs-extra": "^11.1.0",
+        "node-addon-api": "^5.0.0"
+    }
+}
